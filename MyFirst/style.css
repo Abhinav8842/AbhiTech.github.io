@@ -1,0 +1,555 @@
+html{
+    scroll-behavior: smooth;
+   
+}
+
+*{ margin: 0;padding: 0; border-sizing: border-box;
+    font-family: sans-serif;}
+
+a{
+text-decoration: none;}
+
+a:hover{text-decoration: none;}
+
+li{list-style: none;}
+p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #000000;
+}
+.extra-div h2,.servicediv h2{
+font-size: 0.9rem;
+margin: 20px 0 15px 0;
+font-weight: bold;
+line-height: 1.1;
+word-spacing: 4px;
+
+
+}
+i{
+    color: #000000;
+}
+/******actual css classes start*******/
+
+.header{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.699),rgba(0, 0, 0, 0.699)),url("bacground.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0%,100% 75%,50% 100%,0 75%,0 0);
+    position: relative;
+
+}
+
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: 0.6;
+    z-index: -1;
+    background:black;
+}
+.navbar::before{
+    content: "";
+    
+    position:absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    
+    z-index: -1;
+   background: #00264c;
+
+}
+.about{
+    top: 100px;
+}
+
+.nav-item a{
+
+    color:#fff !important;
+    font-weight: bold;
+
+
+}
+#logo img{
+    width: 100px;
+}
+
+.navbar ul li a:hover{
+    color: rgb(8, 131, 4) !important;
+    transition:all 0.3s linear;
+    text-decoration:underline rgb(8, 131, 4);
+    transform: scale(1.1) ;
+    
+    
+   
+}
+.header-section{
+    width: 100%;
+height: inherit;
+color: white;
+    text-align: center;
+    position: relative;
+}
+.header-section h1{
+    color: rgb(8, 131, 4);
+}
+.header-section h3{
+    color: rgba(138, 131, 33, 0.897);
+}
+
+.center-div{
+width: 100%;
+height: auto;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%);
+
+}
+.header-buttons a{
+    border: 1px solid rgba(138, 131, 33, 0.897) ;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color:rgba(138, 131, 33, 0.897) ;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+
+}
+.header-buttons a:hover{
+    color: #ffffff;
+    background:rgb(8, 131, 4) ;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgb(0, 0, 0);
+}
+.center-div p{
+    font-size:1.1rem;
+    padding: 10px 0% 20px 0%;
+   
+    color: #fff;
+}
+/********************extra header div css start********************/
+.header-extradiv{width: 100%;
+    height: auto;
+    margin: 100px 0;
+    text-align: center;
+
+}
+.extra-div{
+
+    background:rgba(255, 255, 255, 0.493);
+    border: medium none;
+    padding: 50px !important;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.extra-div:hover{
+    background:rgb(8, 131, 4) ;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+    transform: translateY(-20px);
+}
+
+
+/********************extra header div css end********************/
+
+
+
+/**********************service offer css start**********************************/
+.serviceoffers{
+    
+background :#f7f7f9;
+padding: 50px 0 ;
+margin-bottom: 50px ;}
+.headings{
+    margin-bottom: 50px;
+
+}
+.headings h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+.names h1{
+    color: #2e2e2e;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.progress{
+    height: 0.7rem!important;
+    margin-bottom: 25px!important;
+    background:#606060 ;
+
+}
+.Service-icons{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+
+/**********************service offer css end**********************************/
+
+
+/**********************awards won start**********************************/
+.project-work{
+    margin: 100px 0;
+
+}
+.project-work h1{
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+
+
+/**********************awards won end**********************************/
+
+
+/**********************pricing css start**********************************/
+
+.pricing{
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+
+}
+.pricing::before{
+
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    
+    z-index: -1;
+    background:linear-gradient(160deg, #000000 55%,#fff 0);
+
+}
+.money{
+    font-size: 40px;
+    line-height: 1;
+    color: #606060;
+}
+.card{
+    transition: 0.4s ease;
+
+}
+.card-header{
+    font-size: 1.6rem;
+    font-weight: bold;
+    background:rgb(0, 0, 0)!important;
+    padding: 25px 9!important;
+    color: rgb(150, 140, 0, 0.897);
+}
+.card-body{
+    padding: 30px 0px!important;
+
+}
+.card-body li {
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #606060;
+}
+.card-footer{
+    background: rgb(0, 0, 0) !important;
+    padding: 30px 0px!important;
+
+}
+.card-footer a{
+    border: 1px solid rgb(150, 140, 0, 0.897);
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: rgb(150, 140, 0, 0.897);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+
+}
+ .card:hover  .card-footer a{
+    color: #fff;
+    background: rgb(8, 131, 4);
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgb(0, 0, 0);
+}
+.card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+}
+.card:hover .card-header, .card:hover .money{
+    color: rgb(8, 131, 4);
+}
+.card-second{
+    transform: translateY(-20px);
+}
+
+/***********************pricing css end**********************************/
+
+
+/***********************contact us css start**********************************/
+
+.contactus{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+    position: relative;
+}
+.contactus::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    background:linear-gradient(330deg,#000000 55% , #fff 0%);
+    z-index: -1;
+    
+    
+}
+.from-button button{
+    border: 1px solid rgb(150, 140, 0, 0.897);
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: rgb(150, 140, 0, 0.897);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.4);
+    background: rgb(0, 0, 0);
+}
+.from-button button:hover{
+
+background: rgb(8, 131, 4);
+border: 1px solid rgb(150, 140, 0, 0.897);
+}
+::placeholder{
+    font-size: 0.85rem;
+}
+
+/***********************contact us css end**********************************/
+
+
+
+/***********************team css start **********************************/
+.team{
+    margin: 75px 0;
+    background: rgba(255, 255, 255, 0.493);
+    
+}
+#teamh1{
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #000000;
+    padding-bottom: 10px;
+
+}
+#teamh1:after{
+    content: "";
+    background: rgb(8, 131, 4);
+    display: block;
+    height: 3px;
+    width: 150px;
+    margin: 10px auto;
+
+}
+.profile{
+    margin-top: 25px;
+
+}
+.profile .img-box{
+    opacity: 1;
+    display: block;
+    position: relative;
+
+}
+.profile h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px ;
+    color: black;
+}
+.profile h3{
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    margin-top: 15px;
+}
+
+.social li a i{
+    display: block;
+   
+    font-size: 35px;
+    width: 35px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    background: white;
+    margin-right: 10px;
+    
+    position: relative;
+
+}
+
+
+a:hover i{
+    transform: scale(1.4) ;
+}
+.fa-instagram{
+    color: #e84393;
+}
+.fa-twitter{
+    color: #0097e6;
+
+}
+.fa-facebook{
+    
+    color: #3b5998;
+}
+
+
+/*********************** team css end**********************************/
+
+
+/*********************** footer css start**********************************/
+
+.footersection{
+    width: 100%;
+    height: auto;
+    padding: 70px 0 20px 0;
+    background:#00264c;
+    position: relative;
+
+
+}
+.footersection p{
+    color: #fff;
+}
+.footersection li a{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+
+}.footersection h2{
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 1.6rem !important;
+    font-weight: 600;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+
+}
+.footer-div{
+    text-align: center;
+}
+
+.navigation{
+    text-align: center;
+}
+.follow{
+    text-align: center;
+}
+    
+.social li{
+    display: inline-block;
+   
+}
+
+#myBtn{
+   display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    color: #fff;
+    background: rgb(8, 131, 4);
+    padding: 10px;
+    border-radius: 10px;
+
+
+}
+
+
+
+.add i{
+    color:white;
+    
+}
+a i{
+    transition:all 0.3s linear;
+
+}
+a:hover i{
+    transform: scale(1.4) ;
+}
+
+
+
+
+
+
+
+
+/*********************** footer css end**********************************/
+
+     /****************** media queries *********************/
+
+     @media(max-width: 768px){
+         .nav-item{
+             text-align: center !important;
+
+         }
+      .pricing ,.happyclients .contactus{
+          height: auto;
+          margin-top: 50px;
+      }
+      .card-second{
+          transform: translateY(0px);
+          margin: 30px 0;
+
+      }
+      .contactus p {
+          padding: 0 50px;
+      }
+      .footer-div:nth-child(2){
+          text-align: left !important;
+      }
+      .footer-div {
+          margin: 30px 0;
+      }
+     }
+
+
+
